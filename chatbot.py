@@ -1,8 +1,9 @@
 import streamlit as st
 import google.generativeai as genai
+import os
 
 # ── Config ──────────────────────────────────────────────────────────────────
-API_KEY = "AIzaSyAGn9lT5kMa0wuSnJOuWzK4R3BaONyGHfE"   # <-- paste your key here
+API_KEY = os.getenv("AIzaSyAGn9lT5kMa0wuSnJOuWzK4R3BaONyGHfE" )  # <-- paste your key here
 KB_FILE = "trains_cleartrip.csv"
 MODEL   = "gemini-2.5-flash"
 
